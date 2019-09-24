@@ -5,7 +5,9 @@ import javax.persistence.Persistence;
 
 public class DBUtil {
 	private static EntityManagerFactory factory = null;
-
+	
+	private DBUtil() {};
+	
 	public static EntityManagerFactory getFactory() {
 		return factory;
 	}
